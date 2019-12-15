@@ -66,16 +66,16 @@ class Spinner extends React.Component {
 }
 
 Spinner.defaultProps = {
-  colorLoader: 'grey',
-  colorText: '#1c1c1c',
+  colorLoader: 'white',
+  colorText: 'white',
   modalAnimation: 'none',
   sizeLoader: 'large',
-  sizeText: 30,
+  sizeText: 25,
   textLoader: 'LOADING',
   visible: false,
   loaderType: 'default',
   textType: 'default',
-  backgroundColor: '#ffffff00',
+  backgroundColor: '#00000088',
 };
 
 Spinner.propTypes = {

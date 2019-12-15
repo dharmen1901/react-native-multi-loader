@@ -55,7 +55,7 @@ export default class animations extends Component {
           marginTop: this.viewMargin(this.animatedValue[a]),
           marginBottom: this.viewMargin(this.animatedValue[a]),
           height: this.viewHeight(this.animatedValue[a]),
-          width: this.props.sizeLoader === 'large' ? 10 : 5,
+          width: this.props.sizeLoader === 'large' ? 5 : 2,
           backgroundColor: this.props.colorLoader,
           marginLeft: 3,
         }}
