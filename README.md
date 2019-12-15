@@ -19,5 +19,24 @@ React Native Component for Multiple animated loaders and loading texts
 | backgroundColor | String | '#ffffff00' (Transparent)| Any valid color | Background color of the overlay |
 
 # Usage
+```
+import Loader from 'react-native-multi-loader';
 
-#License
+<Loader visible={true} loaderType="bars" textType="blinkGrow"/>
+```
+
+# Recommend Usage
+
+React Native Modal has some issues with Alert.
+We recommend to use alert after some time of closing the loader :-
+
+```
+this.setState({ loader: false });
+
+setTimeout(() => {
+  Alert.alert('Loader Closed');
+}, 100);
+```
+
+# License
+[MIT](LICENSE) © Dharmendra Vaishnav
