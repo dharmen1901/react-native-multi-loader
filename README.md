@@ -1,6 +1,13 @@
 # React Native Multi Loader
 React Native Component for Multiple animated loaders and loading texts 
 
+
+![Character Grow Text](Images/Character%20Grow.gif)
+![Dots Loader Blink Grow Text](Images/Dots%20Loader.gif)
+
+![Default Loader Default Text](Images/Default%20Loader.gif)
+![Bar Loader Blink Text](Images/Bar%20Loader.gif) 
+
 # NPM Repository
 https://www.npmjs.com/package/react-native-multi-loader
 
