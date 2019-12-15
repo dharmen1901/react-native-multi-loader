@@ -1,0 +1,47 @@
+{
+  "name": "react-native-multi-loader",
+  "version": "1.0.0",
+  "description": "React Native Component for Multiple animated loaders and loading texts ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "android",
+    "ios",
+    "loading",
+    "bar",
+    "dots",
+    "modal",
+    "popup",
+    "progress",
+    "indicator",
+    "spinner",
+    "animation",
+    "overlay"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:dharmen1901/react-native-multi-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dharmen1901/react-native-multi-loader/issues"
+  },
+  "homepage": "https://github.com/dharmen1901/react-native-multi-loader",
+  "author": "Dharmendra Vaishnav (dv190196@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "metro-react-native-babel-preset": "^0.56.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  }
+}
