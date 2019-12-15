@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {StyleSheet, View, Animated} from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, View, Animated } from 'react-native';
 
 const arr = [];
 for (var i = 0; i < 5; i++) {
@@ -49,19 +49,17 @@ export default class animations extends Component {
 
   render() {
     const animations = arr.map((a, i) => (
-      <View>
-        <Animated.View
-          key={i}
-          style={{
-            marginTop: this.viewMargin(this.animatedValue[a]),
-            marginBottom: this.viewMargin(this.animatedValue[a]),
-            height: this.viewHeight(this.animatedValue[a]),
-            width: this.props.sizeLoader === 'large' ? 10 : 5,
-            backgroundColor: this.props.colorLoader,
-            marginLeft: 3,
-          }}
-        />
-      </View>
+      <Animated.View
+        key={i}
+        style={{
+          marginTop: this.viewMargin(this.animatedValue[a]),
+          marginBottom: this.viewMargin(this.animatedValue[a]),
+          height: this.viewHeight(this.animatedValue[a]),
+          width: this.props.sizeLoader === 'large' ? 10 : 5,
+          backgroundColor: this.props.colorLoader,
+          marginLeft: 3,
+        }}
+      />
     ));
     return <View style={styles.container}>{animations}</View>;
   }

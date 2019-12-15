@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {AppRegistry, StyleSheet, Text, View, Animated} from 'react-native';
+import React, { Component } from 'react';
+import { AppRegistry, StyleSheet, Text, View, Animated } from 'react-native';
 
 export default class animations extends Component {
   constructor(props) {
@@ -44,20 +44,19 @@ export default class animations extends Component {
   render() {
     const animations = this.arr.map((a, i) => {
       return (
-        <View>
-          <Animated.Text
-            key={i}
-            style={{
-              marginTop: this.myMargin(this.animatedValue[i]),
-              marginBottom: this.myMargin(this.animatedValue[i]),
-              fontSize: this.myHeight(this.animatedValue[i]),
-              marginLeft: 3,
-              fontWeight: 'bold',
-              color: this.props.colorText,
-            }}>
-            {a}
-          </Animated.Text>
-        </View>
+        <Animated.Text
+          key={i}
+          style={{
+            marginTop: this.myMargin(this.animatedValue[i]),
+            marginBottom: this.myMargin(this.animatedValue[i]),
+            fontSize: this.myHeight(this.animatedValue[i]),
+            marginLeft: 3,
+            fontWeight: 'bold',
+            color: this.props.colorText,
+          }}
+        >
+          {a}
+        </Animated.Text>
       );
     });
     return <View style={styles.container}>{animations}</View>;
